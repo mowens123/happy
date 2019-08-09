@@ -19,7 +19,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase)],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen, AngularFirestore,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

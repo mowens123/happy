@@ -1,6 +1,10 @@
 import { Component, OnInit, } from '@angular/core';
 import { MessageService } from '../services/message.service';
 import { Message } from '../models/message';
+
+declare var require: any
+const Sentiment = require('sentiment');
+const sentiment = new Sentiment();
     
 @Component({
   selector: 'app-tab1',
